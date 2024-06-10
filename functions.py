@@ -1,7 +1,10 @@
 import inquirer
+import add_function
+import remove_function
+import display_tasks
 
 
-def prompt():
+def user_input(tdl):
     questions = [
         inquirer.List('choice',
                       message="To do list",
@@ -10,15 +13,13 @@ def prompt():
     ]
     answers = inquirer.prompt(questions)
     if answers["choice"] == "1. Add Task":
-        print(1)
-        prompt()
+        add_function.task(tdl)
+        user_input(tdl)
     if answers["choice"] == "2. Remove Task":
-        prompt()
+        remove_function.remove_tasks(tdl)
+        user_input(tdl)
     if answers["choice"] == "3. View Tasks":
-        print(3)
-        prompt()
+        display_tasks.print_TDL(tdl)
+        user_input(tdl)
     if answers["choice"] == "4. Exit":
         exit()
-
-
-prompt()
