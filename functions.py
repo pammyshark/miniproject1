@@ -22,4 +22,5 @@ def user_input(tdl):
         display_tasks.print_TDL(tdl)
         user_input(tdl)
     if answers["choice"] == "4. Exit":
+        print("Exiting the application. Goodbye!")
         exit()
