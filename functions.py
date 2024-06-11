@@ -13,10 +13,10 @@ def user_input(tdl):
     ]
     answers = inquirer.prompt(questions)
     if answers["choice"] == "1. Add Task":
-        add_function.task(tdl)
+        tdl = add_function.task(tdl)
         user_input(tdl)
     if answers["choice"] == "2. Remove Task":
-        remove_function.remove_tasks(tdl)
+        tdl = remove_function.remove_tasks(tdl)
         user_input(tdl)
     if answers["choice"] == "3. View Tasks":
         display_tasks.print_TDL(tdl)
