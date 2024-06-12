@@ -1,5 +1,6 @@
 import inquirer
 import add_function
+import validation
 import remove_function
 import display_tasks
 
