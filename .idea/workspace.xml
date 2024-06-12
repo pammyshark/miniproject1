@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d68ebf3-1d11-4c09-9085-6daf5681f02c" name="Changes" comment="Made main file&#10;integrated functions&#10;&#10;- missing: validation for task removal">
+    <list default="true" id="7d68ebf3-1d11-4c09-9085-6daf5681f02c" name="Changes" comment="Add print to csv feature and display tasks with sorting deadline and importance.">
+      <change beforePath="$PROJECT_DIR$/.idea/miniproject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/miniproject1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_function2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,26 +42,35 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2hhDnRDxikaJ5w6gzMmioIUo9PK" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.add_function.executor&quot;: &quot;Run&quot;,
-    &quot;Python.display_tasks.executor&quot;: &quot;Run&quot;,
-    &quot;Python.from_dict.executor&quot;: &quot;Run&quot;,
-    &quot;Python.functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pedro's&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.add_function.executor": "Run",
+    "Python.display_tasks.executor": "Run",
+    "Python.from_dict.executor": "Run",
+    "Python.functions (1).executor": "Run",
+    "Python.functions.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.more_features.executor": "Run",
+    "Python.validation.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature-add-remove",
+    "last_opened_file_path": "C:/Users/HP-PRO 10/Desktop/miniproject1",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python.add_function">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP-PRO 10\Desktop\miniproject1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.more_features">
     <configuration name="add_function" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="miniproject1" />
       <option name="ENV_FILES" value="" />
@@ -81,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="display_tasks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="functions (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="miniproject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,29 +106,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/display_tasks.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="functions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="miniproject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Pedro\Dropbox\PC\Documents\GitHub\miniproject1\functions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -147,12 +137,57 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="more_features" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="miniproject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/more_features.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="validation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="miniproject1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/validation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.add_function" />
-        <item itemvalue="Python.display_tasks" />
+        <item itemvalue="Python.more_features" />
+        <item itemvalue="Python.functions (1)" />
+        <item itemvalue="Python.validation" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.functions" />
+        <item itemvalue="Python.add_function" />
       </list>
     </recent_temporary>
   </component>
@@ -188,11 +223,56 @@
       <option name="project" value="LOCAL" />
       <updated>1718048963160</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="testing branch">
+      <option name="closed" value="true" />
+      <created>1718126630966</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718126630966</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Validates if priority is a string or integer and loops until user puts an integer.">
+      <option name="closed" value="true" />
+      <created>1718158904287</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718158904287</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Validates if priority is a string or integer and loops until user puts an integer.">
+      <option name="closed" value="true" />
+      <created>1718160111981</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718160111981</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Validates if priority is on the values high, medium or low and also validation of date.">
+      <option name="closed" value="true" />
+      <created>1718164597730</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718164597730</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add print to csv feature and display tasks with sorting deadline and importance.">
+      <option name="closed" value="true" />
+      <created>1718172547398</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718172547398</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added exit function and recursive functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exit function and recursive functionality" />
+    <MESSAGE value="make task 2 Pj1 done" />
+    <MESSAGE value="testing branch" />
+    <MESSAGE value="Validates if priority is a string or integer and loops until user puts an integer." />
+    <MESSAGE value="Validates if priority is on the values high, medium or low and also validation of date." />
+    <MESSAGE value="Add print to csv feature and display tasks with sorting deadline and importance." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add print to csv feature and display tasks with sorting deadline and importance." />
   </component>
 </project>

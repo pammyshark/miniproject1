@@ -9,4 +9,3 @@ def print_TDL(tdl, sort_by=None):
     elif sort_by == 'date':
         df = df.sort_values(by='date')
     print(df)
-    

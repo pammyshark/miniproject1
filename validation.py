@@ -1,40 +1,42 @@
-import datetime
+from datetime import datetime
+import add_function
 
-#This is to validate priority but in a range of 1 to 10
-def validation_priority():
-    while True:
-        add_priority = input("Please choose a priority between 1-10: ")
-        try:
-            int_add_priority = int(add_priority)
-            if 1 <= int_add_priority <= 10:
-                print("You entered a great priority, congrats!")
-                return int_add_priority
-            else:
-                print("The number is not in the range 1 - 10. Please try again.")
-        except ValueError:
-            print("This is not a number, please try other one")
-
-validation_priority()
 
 #for high, medium and low
-def validation_priority():
+def validation_priority(user_input):
     validation_text = {"high", "medium", "low"}
-    while True:
-        add_priority2 = input("Please choose a priority between high, medium or low: ")
-        if add_priority2 in validation_text:
-            print("You entered a great priority, congrats!")
-            return add_priority2
-        else:
-            print("The priority is not written as high, medium or low. Please try again.")
-validation_priority()
+    if user_input in validation_text:
+        print("You entered a great priority, congrats!")
+        return user_input
+    else:
+        new_input = input("Please insert it correctly: ")
+        validation_priority(new_input)
+
 
 #This is to validate the date
-def validation_date():
-    while True:
-        add_date = input("Please add the deadline (YYYY-MM-DD): ")
-        try:
-            date_add_date = datetime.date.fromisoformat(add_date)
-            return True
-        except ValueError:
-            print("Incorrect date format, please try again.")
-validation_date()
+def validation_date(user_input):
+    print(user_input, "flag 1")
+    try:
+        if user_input == datetime.strptime(user_input, "%Y-%m-%d").strftime('%Y-%m-%d'):
+            print(user_input, "flag 2")
+            return user_input
+    except ValueError:
+        print("got here!")
+        validation_date(input("Wrong date format, insert correct: "))
+    # date_add_date = datetime.date.fromisoformat(user_input)
+    # print(date_add_date)
+    # if user_input in date_add_date:
+    #     print("The date is set.")
+    #     return user_input
+    # else:
+    #     new_input = input("Incorrect date format, please try again.")
+    #     validation_date(new_input)
+
+    #while True was here
+    # add_date = input("Please add the deadline (YYYY-MM-DD): ")
+    # try:
+    #     date_add_date = datetime.date.fromisoformat(user_input)
+    #     return user_input
+    # except ValueError:
+    #     print("Incorrect date format, please try again.")
+    #     validation_date(user_input)
