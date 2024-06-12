@@ -1,4 +1,5 @@
-import functions
+import display
 import pandas as pd
+
 TDL = pd.DataFrame([],  columns=["Task", "Priority", "Deadline"])
-functions.user_input(TDL)
+display.user_input(TDL)

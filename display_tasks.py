@@ -1,10 +1,11 @@
-
 import pandas as pd
-def print_TDL (tdl):
-    # for i in range(len(list)):
-    #     print(list[i])
-    # if tdl['priority'] == 'priority':
-    #     df = df.sort_values(by='priority')
-    # elif tdl['date'] == 'date':
-    #     df = df.sort_values(by='date')
+
+
+def print_TDL(tdl):
+    priority_order = ['high', 'medium', 'low']
+    tdl['Priority'] = pd.Categorical(tdl['Priority'], categories=priority_order, ordered=True)
+    tdl['Deadline'] = pd.to_datetime(tdl['Deadline'])
+    df_sorted = tdl.sort_values(by=['Priority', 'Deadline'])
+
+    print(df_sorted)
     # print(df)
