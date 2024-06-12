@@ -14,8 +14,9 @@ def task(df):
     add_date = validation.validation_date(add_date)
     print(f"Awesome! you added {add_task} with {add_priority} due {add_date} to your to-do list")
     # storaging the add_task to the list called "task_list"
-    # adding a add_task to the general list task_list
-    df_new = pd.DataFrame({"task": [add_task], "priority": [add_priority], "date": [add_date]})
-    df_new = pd.concat([df, df_new])
+
+    # adding add_task to the general list task_list
+    df_new = pd.DataFrame({"Task": [add_task], "Priority": [add_priority], "Deadline": [add_date]})
+    df_new = pd.concat([df, df_new], ignore_index=True)
 
     return df_new

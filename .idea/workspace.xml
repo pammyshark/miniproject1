@@ -8,8 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/miniproject1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/miniproject1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_function2.py" beforeDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/add_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/display_tasks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remove_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/remove_function.py" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +59,16 @@
     "Python.add_function.executor": "Run",
     "Python.display_tasks.executor": "Run",
     "Python.from_dict.executor": "Run",
-    "Python.functions (1).executor": "Run",
+
     "Python.functions.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.more_features.executor": "Run",
-    "Python.validation.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature-add-remove",
-    "last_opened_file_path": "C:/Users/HP-PRO 10/Desktop/miniproject1",
+    "git-widget-placeholder": "Pedro's",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\HP-PRO 10\Desktop\miniproject1" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.more_features">
+  <component name="RunManager" selected="Python.add_function">
+
     <configuration name="add_function" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="miniproject1" />
       <option name="ENV_FILES" value="" />
