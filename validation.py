@@ -9,14 +9,15 @@ def validation_priority(user_input):
         return user_input
     else:
         new_input = input("Please insert it correctly: ")
-        validation_priority(new_input)
+        return validation_priority(new_input)
 
 
 # This is to validate the date
 def validation_date(user_input):
     try:
-        if user_input == datetime.strptime(user_input, "%Y-%m-%d").strftime('%Y-%m-%d'):
-            return user_input
+        valid_date = datetime.strptime(user_input, "%Y-%m-%d")
+        return valid_date.strftime('%Y-%m-%d')
     except ValueError:
-        validation_date(input("Wrong date format, insert correct: "))
+        new_input = input("Wrong date format, insert correct: ")
+        return validation_date(new_input)
 

@@ -13,7 +13,6 @@ def remove_tasks(tdl):
     answers = inquirer.prompt(questions)
     for i in answers["choice"]:
         tdl.drop(tdl[tdl["Task"] == i].index, inplace=True)
-        print(i)
-    print(tdl)
+        print(f"{i} has been removed from the list.")
 
     return tdl
